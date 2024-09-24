@@ -55,7 +55,7 @@ public class AdminController {
     public String addUserForm(Model model) {
         model.addAttribute("user", new User());
         model.addAttribute("roles", roleRepository.findAll());
-        return "users";
+        return "add";
     }
 
     @PostMapping("/add")
